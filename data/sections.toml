@@ -1,0 +1,4 @@
+[posts]
+	title = "All posts"
+[posts.image]
+  feature = "post-background.jpg"

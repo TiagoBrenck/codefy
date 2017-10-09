@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iot App on Codefy</title>
+    <link>/tags/iot-app/</link>
+    <description>Recent content in Iot App on Codefy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/iot-app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IoT and Mobile App</title>
+      <link>/posts/iot-mobile-app/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iot-mobile-app/</guid>
+      <description>The Project My roommates are two exciting engineers, that love to create prototypes and small projects. Last winter, they built a coffee machine operated by an Arduino Board. Their idea was to create an automatic coffee machine, that you could configure the time for it to start. When the project was half done, they asked me if I could make an app that would trigger the coffee machine, because they wanted to do it while they are still on bed.</description>
+    </item>
+    
+  </channel>
+</rss>

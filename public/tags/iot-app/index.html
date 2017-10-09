@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Iot App &#8211; Codefy</title>
+<meta name="description" content="">
+
+    
+
+
+
+
+
+<meta name="twitter:title" content="Iot App">
+<meta name="twitter:description" content="Tech Blog">
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Iot App">
+<meta property="og:description" content="Tech Blog">
+<meta property="og:url" content="/tags/iot-app/">
+<meta property="og:site_name" content="Codefy">
+
+
+
+  <meta property="og:updated_time" content="2017-09-22T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+<link rel="canonical" href="/tags/iot-app/">
+
+  <link href="/tags/iot-app/index.xml" rel="alternate" type="application/rss+xml" title="Codefy" />
+  <link href="/tags/iot-app/index.xml" rel="feed" type="application/rss+xml" title="Codefy" />
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<meta name="generator" content="Hugo 0.27" />
+
+<script src="/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<link rel="shortcut icon" href="/favicon.png">
+
+
+</head>
+
+<body id="post-index" >
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation" style="display:inline-block">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+			
+				<li>
+					
+					<img src="/images/avatar.jpg" alt="Tiago Brenck's photo" class="author-photo">
+					
+					<h4>Tiago Brenck</h4>
+					<p>.NET Software Developer</p>
+				</li>
+				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				
+				
+				
+				
+				<li>
+					<a href="https://github.com/tiagobrenck"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			
+			</ul>
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    <li><a href="/theme-setup/" >Theme Setup</a></li>
+	  
+	</ul>
+</nav>
+
+<div class="entry-header">
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+		<h1><a href="/" title="Go to the homepage">Codefy</a></h1>
+	  <h2>
+            
+            
+              Iot App
+            
+          </h2>
+    </div>
+  </div>
+</div>
+
+<div id="main" role="main">
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+		  <a href="/posts/iot-mobile-app/" title="IoT and Mobile App"><img src="/images/post-background.png" alt="IoT and Mobile App"></a>
+      </div>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2017-09-22 00:00:00 &#43;0000 UTC"><a href="/posts/iot-mobile-app/">Sep 22, 2017</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~3 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/posts/iot-mobile-app/" rel="bookmark" title="IoT and Mobile App" itemprop="url">IoT and Mobile App</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<h1 id="the-project">The Project</h1>
+
+<p>My roommates are two exciting engineers, that love to create prototypes and small projects. Last winter, they built a coffee machine operated by an Arduino Board. Their idea was to create an automatic coffee machine, that you could configure the time for it to start. When the project was half done, they asked me if I could make an app that would trigger the coffee machine, because they wanted to do it while they are still on bed.</p>
+
+<p>The app idea was super excited, so I decided to accept the challenge and develop something for them. The app project was also used for a course on my post graduation studies (Web and Mobile Development and Design in <a href="https://langara.ca/">Langara</a>). So it was a win-win situation. In summary, the project scope was to create an App (for Android and iOS) capable to send a signal to the Arduino Board, that would process this call and trigger the coffee machine. We called it Smart Coffee.</p>
+
+<h1 id="the-technologies">The Technologies</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<ul>
+<li>Arduino Mega</li>
+<li>Wifi shield ESP8266</li>
+</ul>
+
+<h2 id="software">Software</h2>
+
+<ul>
+<li>Visual Studio 2017</li>
+<li>Xamarin</li>
+<li>Android SDK 5.1</li>
+</ul>
+
+<h1 id="the-solution">The Solution</h1>
+
+<p>I am not going to focus on the Xamarin code because my intention here is to show how to integrate an App with an Arduino, regardless the framework.</p>
+
+<p>Our first task was to configure ESP8266 with my local network. For that we used the following code, found at <a href="https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/examples/WiFiClientBasic/WiFiClientBasic.ino">LINK</a></p>
+
+<pre><code>/*
+ *  This sketch sends a message to a TCP server
+ *
+ */
+
+#include &lt;ESP8266WiFi.h&gt;
+#include &lt;ESP8266WiFiMulti.h&gt;
+
+ESP8266WiFiMulti WiFiMulti;
+
+void setup() {
+    Serial.begin(115200);
+    delay(10);
+
+    // We start by connecting to a WiFi network
+    WiFiMulti.addAP(&quot;SSID&quot;, &quot;passpasspass&quot;);
+
+    Serial.println();
+    Serial.println();
+    Serial.print(&quot;Wait for WiFi... &quot;);
+
+    while(WiFiMulti.run() != WL_CONNECTED) {
+        Serial.print(&quot;.&quot;);
+        delay(500);
+    }
+
+    Serial.println(&quot;&quot;);
+    Serial.println(&quot;WiFi connected&quot;);
+    Serial.println(&quot;IP address: &quot;);
+    Serial.println(WiFi.localIP());
+
+    delay(500);
+}
+
+
+void loop() {
+    const uint16_t port = 80;
+    const char * host = &quot;192.168.1.1&quot;; // ip or dns
+
+
+
+    Serial.print(&quot;connecting to &quot;);
+    Serial.println(host);
+
+    // Use WiFiClient class to create TCP connections
+    WiFiClient client;
+
+    if (!client.connect(host, port)) {
+        Serial.println(&quot;connection failed&quot;);
+        Serial.println(&quot;wait 5 sec...&quot;);
+        delay(5000);
+        return;
+    }
+
+    // This will send the request to the server
+    client.print(&quot;Send this data to server&quot;);
+
+    //read back one line from server
+    String line = client.readStringUntil('\r');
+    client.println(line);
+
+    Serial.println(&quot;closing connection&quot;);
+    client.stop();
+
+    Serial.println(&quot;wait 5 sec...&quot;);
+    delay(5000);
+}
+
+</code></pre>
+
+<p>Once we stablished the connection, my roommates configured the pins so every time we had a connection, the arduino board would light up a LED. On this stage we had our connection working and the integration between Wifi Shield and Board working properly.</p>
+
+<p>The next step was to create a loop statement on the Wifi Shield, in order to listen for requests. That was done by using the ESP8266 library, which contains the method recv().</p>
+
+<pre><code>uint8_t buffer[128] = {0};
+uint8_t mux_id;
+uint32_t len = wifi.recv(&amp;mux_id, buffer, sizeof(buffer), 100);
+
+if (len &gt; 0) { //I got a request }
+
+</code></pre>
+
+<p>With that done, the last step was to create an event handler on the app to send a HTTP request to the WiFi Shield IP Address. On the request, I used a query string to send how many cups the user wants. On the Arduino side, it reads the query string and calls the appropriate code. Also, it sends a HTTP 200 response to the app, confirming the request&rsquo; success.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>In conclusion, we created a loop to listen for any HTTP request, and once it captures one, it would process it and send a HTTP response. For the app side, it just needed to send a HTTP request to the WiFi Shield IP with the cups as query string.</p>
+
+  </div>
+</article>
+
+
+
+
+
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span> Powered by <a href="https://gohugo.io/" rel="nofollow">Hugo</a> using the <a href="https://github.com/dldx/hpstr-hugo-theme" rel="nofollow">HPSTR</a> theme.</span>
+
+  </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="\/js\/vendor\/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/js/scripts.min.js"></script>
+
+
+
+</body>
+</html>
+

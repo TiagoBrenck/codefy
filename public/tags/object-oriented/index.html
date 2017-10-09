@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Object Oriented &#8211; Codefy</title>
+<meta name="description" content="">
+
+    
+
+
+
+
+
+<meta name="twitter:title" content="Object Oriented">
+<meta name="twitter:description" content="Tech Blog">
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Object Oriented">
+<meta property="og:description" content="Tech Blog">
+<meta property="og:url" content="/tags/object-oriented/">
+<meta property="og:site_name" content="Codefy">
+
+
+
+  <meta property="og:updated_time" content="2017-09-22T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+<link rel="canonical" href="/tags/object-oriented/">
+
+  <link href="/tags/object-oriented/index.xml" rel="alternate" type="application/rss+xml" title="Codefy" />
+  <link href="/tags/object-oriented/index.xml" rel="feed" type="application/rss+xml" title="Codefy" />
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<meta name="generator" content="Hugo 0.27" />
+
+<script src="/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<link rel="shortcut icon" href="/favicon.png">
+
+
+</head>
+
+<body id="post-index" >
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation" style="display:inline-block">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+			
+				<li>
+					
+					<img src="/images/avatar.jpg" alt="Tiago Brenck's photo" class="author-photo">
+					
+					<h4>Tiago Brenck</h4>
+					<p>.NET Software Developer</p>
+				</li>
+				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				
+				
+				
+				
+				<li>
+					<a href="https://github.com/tiagobrenck"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			
+			</ul>
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    <li><a href="/theme-setup/" >Theme Setup</a></li>
+	  
+	</ul>
+</nav>
+
+<div class="entry-header">
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+		<h1><a href="/" title="Go to the homepage">Codefy</a></h1>
+	  <h2>
+            
+            
+              Object Oriented
+            
+          </h2>
+    </div>
+  </div>
+</div>
+
+<div id="main" role="main">
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+		  <a href="/posts/solid/" title="S.O.L.I.D Principles"><img src="/images/post-background.png" alt="S.O.L.I.D Principles"></a>
+      </div>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2017-09-22 00:00:00 &#43;0000 UTC"><a href="/posts/solid/">Sep 22, 2017</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~6 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/posts/solid/" rel="bookmark" title="S.O.L.I.D Principles" itemprop="url">S.O.L.I.D Principles</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<p>Object Orientation has so many principles and theories behind it, that is quite impossible to have an architecture that uses 100% of it. To decide which principles should be ignored, you have to consider how complex is your app, how often will it be updated, how many users will access it and many others considerations. However, the <strong>SOLID</strong> principles fit on almost all scenarios and should be considered to be implemented on every architecture because the benefits of it are countless. Furthermore, the time you will spend implementing them is minimal.</p>
+
+<p>The 5 SOLID principles are:</p>
+
+<ul>
+<li><strong>S</strong> -&gt; <a href="#single-responsibility">Single Responsibility principle</a></li>
+<li><strong>O</strong> -&gt; <a href="#open-closed">Open/Closed principle</a></li>
+<li><strong>L</strong> -&gt; <a href="#liskov-substitution">Liskov Substitution principle</a></li>
+<li><strong>I</strong> -&gt; <a href="#interface-segregation">Interface Segregation principle</a></li>
+<li><strong>D</strong> -&gt; <a href="#dependency-inversion">Dependency Inversion principle</a></li>
+</ul>
+
+<hr />
+
+<h2 id="single-responsibility">Single Responsibility</h2>
+
+<p>A class should have only one reason to change. In other words, a class should be responsible for only one subject and has only functions related to that subject. For example, on an e-commerce app, a class called PricingServices should only have functions related to price. Submitting an order isn&rsquo;t its responsibility so it shouldn&rsquo;t have any code or business rules for that.</p>
+
+<h3 id="benefits">Benefits</h3>
+
+<p>By adopting the Single Responsibility principle, you are ensuring that you have a level of clean code on your project, helping future maintenances easier to be done and less prone to bugs. Also, the principle makes your classes be more robust.</p>
+
+<hr />
+
+<h2 id="open-closed">Open Closed</h2>
+
+<p>Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modifications, that is, such an entity can allow its behavior to be extended without modifying its source code. You want your code to be easier to be extended as possible and not having to modify the whole application.</p>
+
+<p>Using the same PricingServices example that we used above, you have a class that knows how to price your selling products. Since your e-commerce only sells food, the tax rate to be applied on every product is fixed. If your company starts selling kitchen gadgets, you would have two categories of products with different taxes rates from each other. A good usage of the Open/Closed principle for this scenario is to have the class PricingServices&rsquo; methods expecting a generic type of product. Using this approach, the prices calculations wouldn&rsquo;t be based on a fixed type of product and the class would be opened to deal with any kind of products, without having its code modified.</p>
+
+<h3 id="benefits-1">Benefits</h3>
+
+<p>By using the Open/Closed principle, you are increasing the scalability of the software and reducing its coupling. Changes are easy to be implemented and you have the safety that the new extension won&rsquo;t brake any existing business rules.</p>
+
+<hr />
+
+<h2 id="liskov-substitution">Liskov Substitution</h2>
+
+<p>The object of a derived class should be able to replace an object of the base class without bringing any errors in the system or modifying the behavior of the base class. This principle is about following the contract of the base class.</p>
+
+<p>An example of a class structure which violates Liskov Substitution is:</p>
+
+<pre><code> public interface IDuck
+ {
+    void Swim();
+    // contract says that IsSwimming should be true if Swim has been called.
+    bool IsSwimming { get; }
+ }
+
+ public class OrganicDuck : IDuck
+ {
+    public void Swim()
+    {
+       //do something to swim
+    }
+
+    bool IsSwimming { get { /* return if the duck is swimming */ } }
+ }
+
+ public class ElectricDuck : IDuck
+ {
+    bool _isSwimming;
+
+    public void Swim()
+    {
+       if (!IsTurnedOn)
+         return;
+
+       _isSwimming = true;
+       //swim logic  
+
+    }
+
+    bool IsSwimming { get { return _isSwimming; } }
+ }
+</code></pre>
+
+<p>And the calling code:</p>
+
+<pre><code>  void MakeDuckSwim(IDuck duck)
+  {
+      duck.Swim();
+  }
+</code></pre>
+
+<p>As you can see, there are two examples of ducks. One organic duck and one electric duck. The electric duck can only swim if it&rsquo;s turned on. This breaks the Liskov Substitution principle since it must be turned on to be able to swim as the IsSwimming (which also is part of the contract) won&rsquo;t be set as in the base class. <a href="https://stackoverflow.com/questions/4428725/can-you-explain-liskov-substitution-principle-with-a-good-c-sharp-example">Code Source</a></p>
+
+<h3 id="benefits-2">Benefits</h3>
+
+<p>Similar to Open/Closed principle, the benefits of using Liskov are to increase the scalability of the software. Also, it ensure that future new subclasses won&rsquo;t break any tested code.</p>
+
+<hr />
+
+<h2 id="interface-segregation">Interface Segregation</h2>
+
+<p>It states that no client should be forced to depend on methods it does not use. Basically the idea is to split interfaces that are very large into smaller and more specific ones. This principle has a small similarity with Single Responsibility, however it is focused on interfaces.</p>
+
+<p>A super generic interface, that represents everything in your business world, is actually a spaghetti interface. If you have a vehicle subject app, and decides to create an interface that wraps the behavior of all kind of vehicles, you could come with something like this:</p>
+
+<pre><code>public IVehicle
+{
+  void StartEngine();
+  void Accelerate();
+  void Break();
+  void ChangeGear(int newGear);
+  void TurnRadioOnOff();
+  void EjectCD();
+}
+</code></pre>
+
+<p>Having that interface as example, if you have a car, that has radio with CD feature and is manual, the interface works fine. However, An automatic car is also a vehicle. As well as motorcycles and buses. They can only implement some of the interface contracts, while the others would have to return null or some illogical rule.</p>
+
+<h3 id="benefits-3">Benefits</h3>
+
+<p>The benefits of using Interface Segregation resume to a clean and more cohered code. Adopting this principle may result into creating more interfaces, but on the other hand, you won&rsquo;t have concrete classes that implement an interface but are not actually represented by that interface.</p>
+
+<hr />
+
+<h2 id="dependency-inversion">Dependency Inversion</h2>
+
+<p>High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Abstractions should not depend on details. Details should depend on abstractions.</p>
+
+<p>Design your software in modules, the 3 tier architecture is a good example, and make them independent of each other. If one module should send data or use another module, do it through interfaces and dependency injection.</p>
+
+<p>In a real world scenario, you have your business module containing all the business rules, validations and stuff. This module needs to get data from the database and send them back updated. Is it important to the business module what DB are you using? Or, if you are using an ORM such as Entity Framework or NHibernate? The answer should be no, because rules like new users must have a valid email, or the field foo is mandatory, should be applied if your DB is MYSQL, SQL Server, Mongo or whatever. So, to accomplish the dependency inversion, you create an interface for your DB module, which the business module will be dependent on. With that architecture, if you change your DB from MySql to SQL Server for example, your business module will not need any modification.</p>
+
+<h3 id="benefits-4">Benefits</h3>
+
+<p>Adopting the Dependency Inversion principle, you increase your software scalability, decrease its coupling and create independent modules that can be modified or re-utilized without stress.</p>
+
+  </div>
+</article>
+
+
+
+
+
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span> Powered by <a href="https://gohugo.io/" rel="nofollow">Hugo</a> using the <a href="https://github.com/dldx/hpstr-hugo-theme" rel="nofollow">HPSTR</a> theme.</span>
+
+  </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="\/js\/vendor\/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/js/scripts.min.js"></script>
+
+
+
+</body>
+</html>
+

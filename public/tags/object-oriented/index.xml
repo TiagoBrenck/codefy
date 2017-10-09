@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object Oriented on Codefy</title>
+    <link>/tags/object-oriented/</link>
+    <description>Recent content in Object Oriented on Codefy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/object-oriented/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>S.O.L.I.D Principles</title>
+      <link>/posts/solid/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/solid/</guid>
+      <description>Object Orientation has so many principles and theories behind it, that is quite impossible to have an architecture that uses 100% of it. To decide which principles should be ignored, you have to consider how complex is your app, how often will it be updated, how many users will access it and many others considerations. However, the SOLID principles fit on almost all scenarios and should be considered to be implemented on every architecture because the benefits of it are countless.</description>
+    </item>
+    
+  </channel>
+</rss>

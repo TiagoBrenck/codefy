@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codefy</title>
+    <link>/</link>
+    <description>Recent content on Codefy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>This is a tech blog developed by Tiago Brenck, currently studying Web and Mobile Development and Design in Langara, with the purpose to show interesting topics that I have learned through out my career.</description>
+    </item>
+    
+    <item>
+      <title>IoT and Mobile App</title>
+      <link>/posts/iot-mobile-app/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iot-mobile-app/</guid>
+      <description>The Project My roommates are two exciting engineers, that love to create prototypes and small projects. Last winter, they built a coffee machine operated by an Arduino Board. Their idea was to create an automatic coffee machine, that you could configure the time for it to start. When the project was half done, they asked me if I could make an app that would trigger the coffee machine, because they wanted to do it while they are still on bed.</description>
+    </item>
+    
+    <item>
+      <title>S.O.L.I.D Principles</title>
+      <link>/posts/solid/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/solid/</guid>
+      <description>Object Orientation has so many principles and theories behind it, that is quite impossible to have an architecture that uses 100% of it. To decide which principles should be ignored, you have to consider how complex is your app, how often will it be updated, how many users will access it and many others considerations. However, the SOLID principles fit on almost all scenarios and should be considered to be implemented on every architecture because the benefits of it are countless.</description>
+    </item>
+    
+    <item>
+      <title>Theme Setup</title>
+      <link>/theme-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/theme-setup/</guid>
+      <description>This is a port of the HPSTR theme to Hugo. This theme is perfect for bloggers.
+Get the theme With Git installed, run the following commands inside the Hugo site folder. If Hugo has not yet been installed, read the setup guide here.
+$ mkdir themes $ cd themes $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr  You can get a zip of the latest version of the theme from the home page and extract it to the themes folder.</description>
+    </item>
+    
+  </channel>
+</rss>

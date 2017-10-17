@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Codefy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Interactive Computation</title>
+      <link>/tags/interactive-computation/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/interactive-computation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Iot App</title>
       <link>/tags/iot-app/</link>
-      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/iot-app/</guid>
       <description></description>

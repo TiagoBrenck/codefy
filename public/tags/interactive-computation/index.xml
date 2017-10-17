@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interactive Computation on Codefy</title>
+    <link>/tags/interactive-computation/</link>
+    <description>Recent content in Interactive Computation on Codefy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/interactive-computation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interactive Computation</title>
+      <link>/posts/interactive-computitation/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/interactive-computitation/</guid>
+      <description>Concept &amp;ldquo;In computer science, interactive computation is a mathematical model for computation that involves input/output communication with the external world during computation. This is in contrast to the traditional understanding of computation which assumes reading input only before computation and writing output only after computation, thus defining a kind of &amp;ldquo;closed&amp;rdquo; computation.&amp;rdquo; (https://en.wikipedia.org/wiki/Interactive_computation)
+Using this paradigma, some companies are investing on software that are interactive with the users in order to give them the feeling that there is a communication happening between human and machine.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -28,7 +28,7 @@
 
 
 
-  <meta property="og:updated_time" content="2017-09-22T00:00:00&#43;00:00"/>
+  <meta property="og:updated_time" content="2017-10-10T00:00:00&#43;00:00"/>
 
 
 
@@ -123,6 +123,145 @@
 </div>
 
 <div id="main" role="main">
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+		  <a href="/posts/aws-iot/" title="AWS IoT"><img src="/images/post-background.png" alt="AWS IoT"></a>
+      </div>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2017-10-10 00:00:00 &#43;0000 UTC"><a href="/posts/aws-iot/">Oct 10, 2017</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~4 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/posts/aws-iot/" rel="bookmark" title="AWS IoT" itemprop="url">AWS IoT</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<h2 id="iot">IoT</h2>
+
+<p>IoT stands for Internet of Things, and it is  basically a network of physical devices that share data and communicate with each other.</p>
+
+<p>Some IoT examples are:</p>
+
+<ul>
+<li>Automated Home</li>
+<li>Smart cities (city services exchanging data to take decision)</li>
+<li>Smart watches</li>
+<li>Gardening sensors</li>
+<li>Heart beat tracker</li>
+</ul>
+
+<h2 id="aws-iot">AWS IoT</h2>
+
+<p>“AWS IoT is a managed cloud platform that lets connected devices - cars, light bulbs, sensor grids, and more - easily and securely interact with cloud applications and other devices.” (Amazon.com description). This service allows you to connect, store states, and manage the devices on the cloud. It can also process data, filter them, transform and act upon data from the devices on the fly. In other words, it provides you services where you can create your own code that can trigger others AWS services.</p>
+
+<h3 id="communication">Communication</h3>
+
+<p>The communication can be done via four types of protocols:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Protocol</th>
+<th align="left">Authentication</th>
+<th align="left">Port</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">MQQT</td>
+<td align="left">Client Certificate</td>
+<td align="left">8883</td>
+</tr>
+
+<tr>
+<td align="left">HTTP</td>
+<td align="left">Client Certificate</td>
+<td align="left">8443</td>
+</tr>
+
+<tr>
+<td align="left">HTTP</td>
+<td align="left">SigV4</td>
+<td align="left">443</td>
+</tr>
+
+<tr>
+<td align="left">MQTT + WebSocket</td>
+<td align="left">SigV4</td>
+<td align="left">443</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="rules">Rules</h3>
+
+<p>When you are creating your AWS IoT service, you have the option to setup what they call Rules. Rules give your devices the ability to interact with AWS services. You can use rules to support tasks like:</p>
+
+<ul>
+<li>Save a file to Amazon S3.</li>
+<li>Invoke a Lambda function to extract data.</li>
+<li>Send a push notification to all users using Amazon SNS.</li>
+<li>Write data received from a device to an Amazon DynamoDB database.</li>
+</ul>
+
+<h3 id="device-shadows">Device Shadows</h3>
+
+<p>A thing shadow is a JSON document that is used to store and retrieve current state information for a thing (device, app, and so on). You can use thing shadows to get and set the state of a thing over MQTT or HTTP, regardless of whether the thing is connected to the Internet. Each thing shadow is uniquely identified by its name. With that, your physical devices won&rsquo;t miss any update in case they get disconnected.</p>
+
+<h3 id="quick-tutorial">Quick Tutorial</h3>
+
+<p>Creating your thing on AWS IoT is easy.</p>
+
+<ol>
+<li>First log in your AWS account (<a href="aws.amazon.com">AWS Link</a>) and select <strong>AWS IoT</strong>.</li>
+<li>On the right sidebar, click on <strong>Registry &gt; Register a thing</strong>.</li>
+<li>Type the name of your thing (for example &ldquo;MyFirstThing&rdquo;) and click on <strong>Create Thing</strong>.</li>
+<li>Amazon will redirect you to a screen where you can see your created thing inside a box. This means that your thing is created, however it needs the certifications for the communication between you app and AWS IoT. So, for that, <strong>click on that box</strong>.</li>
+<li>Under <strong>Security</strong> tab, click on <strong>Create certificate</strong>.</li>
+<li>Just by clicking the button, the certifications get created and you have the links to download it. On the same screen, click on the <strong>Attach a policy</strong> button.</li>
+<li>Policies are like permissions for that certificate. You can have a certificate with admin privileges and another with just read privileges. For the sake of this example, we are going to create an admin one. Click on <strong>Create new policy</strong>.</li>
+<li>Name it Admin and inside the Action textbox, type <strong>*</strong>. For the Effect option, click <strong>Allow</strong> (we are allowing the action to be executed), then click on <strong>Create</strong> button.</li>
+<li>Now, click on <strong>Security &gt; Certificates</strong>. Select your certificate and click on <strong>Action</strong> located on the bottom right of the black box containing your certificate ID. Then, click on <strong>Attach policy</strong>, select the Admin policy that we have just created and click <strong>Attach</strong>.</li>
+<li>Click on <strong>Action</strong> again, but this time select <strong>Attach a thing</strong>. Then select our thing, MyFirstThing, and click <strong>Attach</strong>.</li>
+<li>By this step, you have your thing created with its certificates and policies attached. If you click on <strong>Registry &gt; Things &gt; MyFirstThing &gt; Interact</strong>, Amazon has provided you the REST API Endpoint for you interact with your thing.</li>
+</ol>
+
+<h3 id="esp8266-and-aws">ESP8266 and AWS</h3>
+
+<p>In order to connect your AWS IoT with ESP8266 module (Arduino wifi shield) you can use these two libraries and it setup according to this code.</p>
+
+<pre><code>#include &lt;AmazonIOTClient.h&gt;
+#include &lt;ESP8266AWSImplementations.h&gt;
+
+void initAWS()
+{
+  iotClient.setAWSRegion(&quot;eu-west-1&quot;);
+  iotClient.setAWSEndpoint(&quot;amazonaws.com&quot;);
+  iotClient.setAWSDomain(&quot;xxx.amazonaws.com&quot;);
+  iotClient.setAWSPath(&quot;/things/XXX/shadow&quot;);
+  iotClient.setAWSKeyID(&quot;XXX&quot;);
+  iotClient.setAWSSecretKey(&quot;YYY&quot;);
+  iotClient.setHttpClient(&amp;httpClient);
+}
+
+</code></pre>
+
+<p>You can find a demo at: <a href="https://github.com/CheapskateProjects/ESP8266AWSIoTDemo/blob/master/ESP8266AWSIoTDemo.ino">https://github.com/CheapskateProjects/ESP8266AWSIoTDemo/blob/master/ESP8266AWSIoTDemo.ino</a></p>
+
+  </div>
+</article>
 
 <article class="hentry">
   <header>

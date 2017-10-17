@@ -6,7 +6,7 @@
     <description>Recent content on Codefy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,27 @@
       
       <guid>/about/</guid>
       <description>This is a tech blog developed by Tiago Brenck, currently studying Web and Mobile Development and Design in Langara, with the purpose to show interesting topics that I have learned through out my career.</description>
+    </item>
+    
+    <item>
+      <title>Interactive Computation</title>
+      <link>/posts/interactive-computitation/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/interactive-computitation/</guid>
+      <description>Concept &amp;ldquo;In computer science, interactive computation is a mathematical model for computation that involves input/output communication with the external world during computation. This is in contrast to the traditional understanding of computation which assumes reading input only before computation and writing output only after computation, thus defining a kind of &amp;ldquo;closed&amp;rdquo; computation.&amp;rdquo; (https://en.wikipedia.org/wiki/Interactive_computation)
+Using this paradigma, some companies are investing on software that are interactive with the users in order to give them the feeling that there is a communication happening between human and machine.</description>
+    </item>
+    
+    <item>
+      <title>AWS IoT</title>
+      <link>/posts/aws-iot/</link>
+      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/aws-iot/</guid>
+      <description>IoT IoT stands for Internet of Things, and it is basically a network of physical devices that share data and communicate with each other.
+Some IoT examples are:
+ Automated Home Smart cities (city services exchanging data to take decision) Smart watches Gardening sensors Heart beat tracker  AWS IoT “AWS IoT is a managed cloud platform that lets connected devices - cars, light bulbs, sensor grids, and more - easily and securely interact with cloud applications and other devices.</description>
     </item>
     
     <item>

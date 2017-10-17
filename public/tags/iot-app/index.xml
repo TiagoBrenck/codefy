@@ -6,10 +6,21 @@
     <description>Recent content in Iot App on Codefy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/iot-app/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS IoT</title>
+      <link>/posts/aws-iot/</link>
+      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/aws-iot/</guid>
+      <description>IoT IoT stands for Internet of Things, and it is basically a network of physical devices that share data and communicate with each other.
+Some IoT examples are:
+ Automated Home Smart cities (city services exchanging data to take decision) Smart watches Gardening sensors Heart beat tracker  AWS IoT “AWS IoT is a managed cloud platform that lets connected devices - cars, light bulbs, sensor grids, and more - easily and securely interact with cloud applications and other devices.</description>
+    </item>
     
     <item>
       <title>IoT and Mobile App</title>
